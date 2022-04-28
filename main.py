@@ -6,7 +6,7 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-wrong_choice="You entered a wrong choice"
+bill=0
 if size=="S":
   bill = 15
   if add_pepperoni=="Y":
@@ -21,4 +21,6 @@ elif size == "L" :
     bill += 3
 if extra_cheese == "Y":
   bill += 1
-print(bill)
+Final_msg= "Your final bill is $%.2f ."
+print(Final_msg % bill)
+#print(f"Your final bill is ${bill}")
